@@ -31,7 +31,7 @@ icp_access deny all
 
 http_port 3128 
 
-cache_mem 8 MB
+cache_mem 800 MB
 
 access_log /apps/squid/var/logs/access.log squid
 
@@ -43,6 +43,6 @@ icp_port 3130
 
 coredump_dir /apps/squid/var/cache
 
-redirect_program /usr/bin/python /apps/squid/custom_redirect.py
+#redirect_program /usr/bin/python /apps/squid/custom_redirect.py
 redirect_children 5
 
